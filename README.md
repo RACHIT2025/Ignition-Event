@@ -1,16 +1,54 @@
-# React + Vite
+# 🔥 Ignition Events: Front-End Ticketing Prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A highly styled, animated event ticketing website prototype built entirely using modern front-end technologies. It simulates the core user experience of a major platform while featuring a unique, high-contrast **dark/neon aesthetic**.
 
-Currently, two official plugins are available:
+## 🌟 Key Technical Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project showcases mastery of modern front-end development, animations, and modular architecture.
 
-## React Compiler
+* **Core Technology:** Built with **React JS** using **Vite** for incredibly fast development and compilation.
+* **Routing:** Implements **React Router DOM** for seamless, single-page application (SPA) navigation. Clicking links results in **instantaneous page swaps** without refreshing the browser.
+* **Animations & Effects:** Uses **Framer Motion** for a premium user experience:
+    * **Staggered Entrance:** Event cards slide in and fade sequentially on the homepage.
+    * **Tactile Feedback:** Buttons feature responsive **lift, glow, and depress** effects upon hover and click.
+    * **Aesthetic:** High-contrast **Deep Indigo** theme with a vibrant **Electric Cyan (Neon)** accent color, enhanced by **Glassmorphism** on card elements.
+* **Simulated Logic:** Functions are built using React State (`useState`) to simulate key back-end interactions:
+    * **Filter Logic:** Users can adjust a price slider to dynamically show/hide events, demonstrating "No Results" and "Filtered Results."
+    * **Multi-Page Workflow:** Includes full user flows for **Home, Search, Details, Create Event, Help**, and a **Simulated Checkout**.
+* **Currency:** All pricing is localized and displayed in **Indian Rupees (₹)**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📁 Project Structure
+src/
 
-## Expanding the ESLint configuration
+├── assets/ # Images (e.g., event-placeholder.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+├── components/ # Reusable UI pieces (Button, Header, Footer, EventCard)
+
+├── pages/ # Main application views (HomePage, SearchPage, CheckoutPage, etc.)
+
+├── App.jsx # Central routing logic
+
+├── index.css # Global theme and CSS variable definitions
+
+└── main.jsx # Project entry point
+
+The codebase is organized into modular components and pages for clarity and maintainability:
+
+## 💻 How to Run Locally
+
+Follow these steps to get a local copy of the project running on your machine:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [YOUR GITHUB REPOSITORY URL HERE]
+    cd event
+    ```
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Launch the Development Server:**
+    ```bash
+    npm run dev
+    ```
+    (The site will open in your browser, typically at `http://localhost:5173`)
