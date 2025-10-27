@@ -40,7 +40,7 @@ Follow these steps to get a local copy of the project running on your machine:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [YOUR GITHUB REPOSITORY URL HERE]
+    git clone [https://github.com/RACHIT2025/Ignition-Event]
     cd event
     ```
 2.  **Install Dependencies:**
