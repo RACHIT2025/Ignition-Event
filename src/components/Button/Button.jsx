@@ -1,4 +1,6 @@
-import React from 'react';
+/*
+The components directory is the building block layer of the application, housing all reusable UI elements like the Button, Header, Footer, and EventCard. This modular structure is key to scalability and code maintenance. By isolating visual and interactive elements into components, we ensure that changes made to a single element (such as the hover animation on the Button) are applied consistently everywhere it is used across the site. The components leverage CSS Modules for isolated styling and Framer Motion properties to deliver tactile, instantaneous visual feedback.
+*/
 import styles from './Button.module.css';
 import { motion } from 'framer-motion';
 
