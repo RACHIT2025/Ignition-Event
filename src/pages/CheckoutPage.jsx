@@ -1,3 +1,6 @@
+/*
+The pages section is the heart of the application's functionality, as it defines the content and routing structure for the entire user journey. Each file corresponds directly to a main route defined in App.jsx. Files like HomePage.jsx, SearchPage.jsx, and EventDetailsPage.jsx contain the React State logic (useState) necessary to handle user interaction, such as the simulated filter functionality and the price conversion to Rupees (₹). Furthermore, the use of the motion component from Framer Motion within these pages is where the final, polished animations (like staggered loading and entrance effects) are triggered
+*/
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
