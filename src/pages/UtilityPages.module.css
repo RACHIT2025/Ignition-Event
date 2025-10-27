@@ -1,0 +1,258 @@
+.utilityPage {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: var(--secondary-bg);
+    border-radius: 16px;
+    border: 2px solid var(--card-border);
+    box-shadow: 0 10px 40px rgba(0, 255, 255, 0.15);
+    text-align: center;
+}
+
+.pageTitle {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.subText {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+.contentBox {
+    background: var(--primary-bg);
+    border: 1px solid var(--card-border);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contentBox h2 {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Checkout specific styles */
+.orderItem, .paymentInfo {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.totalText {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px dashed var(--card-border);
+}
+
+.actionText {
+    font-style: italic;
+    color: var(--accent-color);
+    margin-top: 20px;
+}
+
+.successButton {
+    background-color: var(--accent-color);
+    color: var(--primary-bg);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.successButton:hover {
+    background-color: var(--link-hover);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+.backButton {
+    background: transparent;
+    color: #bbb;
+    border: 1px solid #444;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.backButton:hover {
+    color: var(--accent-color);
+    background-color: var(--primary-bg);
+}
+
+/* Form Styles for Contact Page */
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactForm label {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm select,
+.contactForm textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--card-border);
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm select:focus,
+.contactForm textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.3);
+}
+
+.contactButton {
+    background-color: var(--accent-color);
+    color: var(--primary-bg);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+/* FAQ Styles for Help Page */
+.faqList summary {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 5px;
+}
+
+.faqList p {
+    color: #ccc;
+    padding: 10px 0 20px 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.actionLink {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.actionLink:hover {
+    text-decoration: underline;
+}
+/* --- New Styles for HelpPage and ContactPage --- */
+
+.faqList summary {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 5px;
+}
+
+.faqList p {
+    color: #ccc;
+    padding: 10px 0 20px 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.actionLink {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.actionLink:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styles */
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactForm label {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm select,
+.contactForm textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--card-border);
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm select:focus,
+.contactForm textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.3);
+}
+
+.contactButton {
+    background-color: var(--accent-color);
+    color: var(--primary-bg);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    transform: translateY(-2px);
+}

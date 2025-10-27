@@ -1,0 +1,65 @@
+/* ---------------------------------------------------------------- */
+/* 1. FONT IMPORT MUST BE FIRST */
+/* ---------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+
+/* ---------------------------------------------------------------- */
+/* 2. ROOT VARIABLES (Defined after @import) */
+/* ---------------------------------------------------------------- */
+:root {
+  --primary-bg: #14142B; /* Deep Indigo Background */
+  --secondary-bg: #1E1E3C; /* Header/Card Base */
+  --accent-color: #00FFFF; /* Electric Cyan */
+  --text-color: #F0F0F0; /* Light Text */
+  --card-border: rgba(0, 255, 255, 0.2);
+  --card-backdrop: rgba(0, 255, 255, 0.05); /* Frosted Glass Base */
+  --link-hover: #00E6E6; 
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* 3. BASE STYLES (Defined after :root) */
+/* ---------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-body);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

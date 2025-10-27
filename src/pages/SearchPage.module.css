@@ -1,0 +1,133 @@
+.searchPage {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--accent-color);
+  position: relative;
+  padding-bottom: 10px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.pageTitle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 120px;
+    height: 5px;
+    background-color: var(--text-color);
+    border-radius: 3px;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap; 
+}
+
+.sidebar {
+  flex: 1; 
+  min-width: 250px;
+  background: var(--card-backdrop);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  height: fit-content; 
+}
+
+.sidebar h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--card-border);
+  padding-bottom: 10px;
+}
+
+.filterGroup {
+  margin-bottom: 30px;
+}
+
+.filterGroup h4 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.filterGroup label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.filterGroup input[type="checkbox"], .filterGroup input[type="range"] {
+  margin-right: 12px;
+  accent-color: var(--accent-color); 
+}
+
+.filterGroup input[type="range"] {
+    width: calc(100% - 24px);
+    margin-top: 10px;
+}
+
+
+.sidebar button {
+  width: 100%; 
+}
+
+.resultsContainer {
+    flex: 3;
+    display: flex;
+    min-height: 500px; 
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+/* Styles for No Results/Initial Message */
+.noResults, .initialMessage {
+    background: var(--secondary-bg);
+    border-radius: 16px;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start; 
+    margin-top: 10px;
+}
+
+.noResults h2 {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.noResults p, .initialMessage p {
+    color: #bbb;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.initialMessage h2 {
+    color: var(--accent-color);
+}

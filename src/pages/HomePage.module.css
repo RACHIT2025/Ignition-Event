@@ -1,0 +1,108 @@
+.homePage {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heroSection {
+  text-align: center;
+  padding: 100px 20px;
+  /* Background image/gradient is applied directly in HomePage.jsx */
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.heroSection h1 {
+  font-size: 4rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.8); 
+}
+
+.heroSection p {
+  font-size: 1.4rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.eventsGridSection {
+  margin-bottom: 60px;
+}
+
+.eventsGridSection h2, .categoriesSection h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.eventsGridSection h2::after, .categoriesSection h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100px;
+    height: 5px;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px 30px; 
+  position: relative; 
+}
+
+/* Asymmetrical Grid Layout */
+.offsetLeft {
+    transform: translateX(-20px) translateY(-15px); 
+}
+
+.offsetRight {
+    transform: translateX(20px) translateY(15px); 
+}
+
+@media (max-width: 768px) {
+    .eventsGrid {
+        grid-template-columns: 1fr;
+    }
+    .offsetLeft, .offsetRight {
+        transform: none;
+    }
+    .heroSection h1 {
+        font-size: 3rem;
+    }
+}
+
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+}
+
+.categoryCard {
+  background: var(--secondary-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-color); 
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.categoryCard:hover {
+  background-color: var(--secondary-bg); 
+}
